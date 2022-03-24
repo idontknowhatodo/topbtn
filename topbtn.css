@@ -1,0 +1,21 @@
+*{
+    background-color: cornsilk;
+}
+.head{
+    width:100%;
+    text-align: center;
+}
+img{
+    height: 100vh;
+    display: block;
+    margin: 30px auto;
+}
+.top.on a{
+    padding: 20px 20px;
+    background-color:darkseagreen;
+    color: deeppink;
+    text-decoration: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 300px; bottom: 30px;
+}

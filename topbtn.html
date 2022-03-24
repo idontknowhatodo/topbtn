@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="topbtn.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>맨 위로 올라가는 top button</h1>
+        </div>
+    </header>
+
+    <main>
+        <img src="img/IMG_1966.jpg" alt="1">
+        <img src="img/IMG_2971.JPG" alt="2">
+        <img src="img/IMG_5056.JPG" alt="3">
+        <img src="img/IMG_5652.JPG" alt="4">
+        <img src="img/IMG_5739.JPG" alt="5">
+        <img src="img/IMG_6256.JPG" alt="6">
+    </main>
+
+    <div class="top">
+        <a href="#">
+            Top
+        </a>
+    </div>
+
+    <script>
+        const Top = document.querySelector('.top');
+
+        window.addEventListener('scroll', function(){
+            if(this.scrollY>180){
+                Top.classList.add('on');
+            } else{
+                Top.classList.remove('on');
+            }
+        })
+        Top.addEventListener('click', function(e){
+            e.preventDefault();
+            window.scrollTo({top:0, behavior: 'smooth'});
+        })
+    </script>
+</body>
+</html>
